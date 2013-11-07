@@ -58,49 +58,30 @@
         <div class="span9">
           <div class="row-fluid">
             <div id="main" role="main" class="well">
-              <h2 id="proper-github-workflow">Proper Github Workflow</h2>
+              <p><a href="/index.html"><img src="rubilicious.jpg" alt="rubilicious" /></a></p>
 
-<p><img src="https://bundler.campfirenow.com/room/566068/uploads/4699656/GitHub-Diagram.png" /></p>
+<h1 id="learn-ruby-the-hard-way">Learn Ruby the Hard Way</h1>
 
-<h4 id="fork-the-repo-original-repo-you-want-to-work-on-to-your-github-account-repo">Fork the Repo (original repo) you want to work on to your Github account repo</h4>
-<pre><code>Press the Fork button (which is on Github.com)
+<h2 id="by-zed-shaw">by Zed Shaw</h2>
+
+<h3 id="example-2httprubylearncodethehardwayorgbookex2html"><a href="http://ruby.learncodethehardway.org/book/ex2.html">Example 2</a></h3>
+
+<h4 id="previoushttpjendiamondgithubiolearnrubythehardwaylrthw-ex1html-nbsp-nexthttpjendiamondgithubiolearnrubythehardwaylrthw-ex3html"><a href="http://jendiamond.github.io/learn_ruby_the_hard_way/lrthw-ex1.html">Previous</a> &nbsp; <a href="http://jendiamond.github.io/learn_ruby_the_hard_way/lrthw-ex3.html">Next</a></h4>
+
+<p>This execise is about commenting out sections of code to make it
+ more readable or to check the function of a cerain section of
+code by eliminating it. <a href="http://en.wikipedia.org/wiki/Number_sign">The symbol #</a> is called an octothorpe, hash,
+ pound sign, number sign.</p>
+
+<pre><code># A comment, this is so you can read your program later.
+# Anything after the # IS IGNORED
+
+puts "I could have code like this." # and the comment after
+
+# You can also use a comment to "disable code"
+# puts "This will not run."
+puts "This will run."
 </code></pre>
-
-<p>https://help.github.com/articles/fork-a-repo</p>
-
-<p>Explanation: It creates a copy of the Repo to your account.</p>
-
-<h4 id="clone-the-repo-on-your-github-account-to-local">Clone the Repo on your Github account to local</h4>
-<pre><code>git clone https://github.com/RGSoCBundler/rgsocbundler.github.io.git
-</code></pre>
-
-<h4 id="link-the-original-repo-to-your-local-repo-so-you-can-pull-the-latest-updates-and-make-sure-your-copy-is-in-sync-with-the-original-repo">Link the original repo to your local repo so you can pull the latest updates and make sure your copy is in sync with the original repo</h4>
-<pre><code>cd rgsocbundler.github.io
-git remote add upstream https://github.com/RGSoCBundler/rgsocbundler.github.io.git
-</code></pre>
-
-<h4 id="create-feature-branch">Create Feature Branch</h4>
-<pre><code>git checkout -b branch-name
-
-(example: git checkout -b pull-cheatsheet)
-</code></pre>
-
-<p>(The git checkout -b command automatically switches to the branch)</p>
-
-<h4 id="check-that-you-are-on-the-correct-branch-make-sure-there-is-an-asterik-next-to-the-branch-name">Check that you are on the correct branch. Make sure there is an asterik next to the branch name.</h4>
-<pre><code>git branch
-</code></pre>
-
-<h4 id="make-your-changesfixesfeatures-and-commit-it-to-origin-the-repo-on-your-github-account">Make Your Changes/Fixes/Features and commit it to origin (the repo on your github account)</h4>
-<pre><code>git add .
-git commit -m "write what changes you made"
-git push origin pull-cheatsheet
-</code></pre>
-
-<h4 id="send-a-pull-request---from-origin-to-upstream-your-account-repo-to-the-original-repo">Send a Pull Request - from origin to upstream (your account repo to the original repo)</h4>
-<pre><code>Click Compare &amp; pull request or the Green button on your Github repository
-</code></pre>
-
 
             </div>
           </div>

@@ -58,46 +58,63 @@
         <div class="span9">
           <div class="row-fluid">
             <div id="main" role="main" class="well">
-              <div class="well" style= "background-color: pink">
-    <div>
-     <a href="/index.html"><img src="/images/rubilious.jpg"></a>
-    </div>
-</div>
-<div class="span11" style= "background-color: #pink">
-    <div><h2>Rails Tutorial</h2>
-         <h3>&nbsp;by Michael Hartl</h3>
-    </div>
-    <div class="span2">
-       <p><img src="/images/jdiamond.jpg" class="img-circle"></p>
-       <p><a href="http://rubywithjendiamond.blogspot.com/" class="btn btn-jdblog">my personal blog &raquo;</a></p>
-       <p><a href="https://twitter.com/jendiamond"><button class="btn btn-twitter"><i class="icon-twitter"></i>Twitter</button></a></p>
-    </div><!--span2-->
-    <div class="span9">
-      <p>s is the industry standard of Rails Tutorials.</p>
-          </div><!--span8-->
- </div><!--well-->
+              <p><a href="/index.html"><img src="rubilicious.jpg" alt="rubilicious" /></a></p>
 
-<div class="row-fluid">
-  <div class="span4">
-  <h3>Exercises 1-11</h3>
-    <ul>
-      <li><a href="">Chapter &nbsp; 1</a></li>
-      <li><a href="">Chapter &nbsp; 2</a></li>
-      <li><a href="">Chapter &nbsp; 3</a></li>
-      <li><a href="">Chapter &nbsp; 4</a></li>
-      <li><a href="">Chapter &nbsp; 5</a></li>
-      <li><a href="">Chapter &nbsp; 6</a></li>
-      <li><a href="">Chapter &nbsp; 7</a></li>
-      <li><a href="">Chapter &nbsp; 8</a></li>
-      <li><a href="">Chapter &nbsp; 9</a></li>
-      <li><a href="">Chapter 10</a></li>
-      <li><a href="">Chapter 11</a></li>
-    </ul>
-  </div><!--/span-->
-    <div class="span4">
-    <h3> Helpful Links</h3>
-  </div><!--/span4-->
-</div><!--/row-->
+<h1 id="learn-ruby-the-hard-way">Learn Ruby the Hard Way</h1>
+
+<h2 id="by-zed-shaw">by Zed Shaw</h2>
+
+<h3 id="example-6httprubylearncodethehardwayorgbookex6html"><a href="http://ruby.learncodethehardway.org/book/ex6.html">Example 6</a></h3>
+
+<h4 id="previoushttpjendiamondgithubiolearnrubythehardway2013-10-28-lrthw-ex5html-nbsp-nexthttpjendiamondgithubiolearnrubythehardway2013-10-28-lrthw-ex7html"><a href="http://jendiamond.github.io/learn_ruby_the_hard_way/2013-10-28-lrthw-ex5.html">Previous</a> &nbsp; <a href="http://jendiamond.github.io/learn_ruby_the_hard_way/2013-10-28-lrthw-ex7.html">Next</a></h4>
+
+<pre><code># the variable x is being assigned  with the following string;
+# Using string interpolation the integer 10 is embeded inside the string
+x = "There are #{10} types of people."
+
+# the variable binary is being assigned  with the string binary
+binary = "binary"
+
+# the variable don't is being assigned  with the string do_not
+do_not = "don't"
+
+# the variable y is being assigned  with the following string
+# Using string interpolation the variable binary and do_not is embeded inside the string
+y = "Those who know #{binary} and those who #{do_not}."
+
+# the method puts prints the variable x to the screen
+puts x
+
+# the method puts prints the variable y to the screen
+puts y
+
+# the method puts prints the string and using string interpolation 
+# embeds the variable x
+puts "I said: #{x}."
+
+# the method puts prints the string to the screen; 
+# using string interpolation it embeds the variable y
+puts "I also said: '#{y}'"
+
+# the variable hilarious is being assigned with the boolean value false
+hilarious = false
+
+# the method puts prints the string and using string interpolation 
+# embeds the variable y
+joke_evaluation = "Isn't that joke so funny?! #{hilarious}"
+
+# the method puts prints the variable joke_evaluation
+puts joke_evaluation 
+
+# the variable w is being assigned with the following string
+w = "This is the left side of..."
+
+# the variable e is being assigned with the following string
+e = "a string with a right side."
+
+# the method puts prints the variables w and e
+puts w + e
+</code></pre>
 
 
             </div>
@@ -108,11 +125,15 @@
             <ul class="nav nav-list">
               <li class="nav-header">Recent Posts</li>
               
+                <li><a href="/2013/11/04/ex1-comments.html">ex1-Comments</a></li>
+              
                 <li><a href="/2012/01/01/example-article.html">Example Article</a></li>
               
               <li class="nav-header">Tags</li>
               
                 <li><a href="/tags/example.html">#example (1)</a></a></li>
+              
+                <li><a href="/tags/lrthw.html">#lrthw (1)</a></a></li>
               
               <li class="nav-header">Contributors</li>
               <li class="nav-header">Elsewhere</li>

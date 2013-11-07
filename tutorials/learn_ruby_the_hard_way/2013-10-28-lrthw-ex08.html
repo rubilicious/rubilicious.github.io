@@ -64,51 +64,43 @@
 
 <h2 id="by-zed-shaw">by Zed Shaw</h2>
 
-<h3 id="example-4httprubylearncodethehardwayorgbookex4html"><a href="http://ruby.learncodethehardway.org/book/ex4.html">Example 4</a></h3>
+<h3 id="example-8httprubylearncodethehardwayorgbookex8html"><a href="http://ruby.learncodethehardway.org/book/ex8.html">Example 8</a></h3>
 
-<h4 id="previoushttpjendiamondgithubiolearnrubythehardway2013-10-28-lrthw-ex3html-nbsp-nexthttpjendiamondgithubiolearnrubythehardway2013-10-28-lrthw-ex5html"><a href="http://jendiamond.github.io/learn_ruby_the_hard_way/2013-10-28-lrthw-ex3.html">Previous</a> &nbsp; <a href="http://jendiamond.github.io/learn_ruby_the_hard_way/2013-10-28-lrthw-ex5.html">Next</a></h4>
+<h4 id="previoushttpjendiamondgithubiolearnrubythehardway2013-10-28-lrthw-ex7html-nbsp-nexthttpjendiamondgithubiolearnrubythehardway2013-10-28-lrthw-ex9html"><a href="http://jendiamond.github.io/learn_ruby_the_hard_way/2013-10-28-lrthw-ex7.html">Previous</a> &nbsp; <a href="http://jendiamond.github.io/learn_ruby_the_hard_way/2013-10-28-lrthw-ex9.html">Next</a></h4>
 
-<pre><code># defining the variable cars with the integer 100
-cars = 100
+<pre><code># the variable formatter is being assigned a series of 4 string formatters
+# that will take 4 arguments 
+formatter = "%s %s %s %s"
 
-# defining the variable space_in_car with the floating point 4.0
-space_in_car = 4.0
+# the method puts prints the variable formatter; using string 
+# interpolation it prints the arguments of integers that follow
+puts formatter % [1,2,3,4]
 
-# defining the variable drivers with the integer 30
-drivers = 30
+# the method puts prints the variable formatter; using string
+# interpolation it prints the arguments of 4 strings that follow
+puts formatter % ["one","two","three","four"]
 
-# defining the variable passengers with the integer 90
-passengers = 90
+# the method puts prints the variable formatter; using string
+# interpolation it prints the arguments of 4 boolean values that follow
+puts formatter % [true, false, false, true]
 
-# defining the variable passengers with the integer 90
-cars_not_driven = cars - drivers
+# the method puts prints the variable formatter; using string
+# interpolation it prints the arguments of 4 variables of itself
+puts formatter % [formatter, formatter, formatter, formatter]
 
-# defining the variable cars_driven with the output of the variable drivers
-cars_driven = drivers
+# the method puts prints the variable formatter; using string
+# interpolation it prints the arguments of 4 strings that follow
+puts formatter % [
+    "I had this thing.",
+    "That you could type up right.",
+    "But it didn't sing.",
+    "So I said goodnight."
+]
 
-# defining the variable carpool_capacity with the equation cars_driven multiplied by space_in_car
-carpool_capacity = cars_driven * space_in_car
-
-# defining the variable average_passengers with the equation passengers divided by cars driven
-average_passengers_per_car = passengers / cars_driven
-
-# uses the method puts to print and return to the next line; the string including the variable cars.
-puts "There are #{cars} cars available."
-
-# uses the method puts to print and return to the next line; the string including the variable drivers.
-puts "There are only #{drivers} drivers available."
-
-# uses the method puts to print and return to the next line; the string including the variable cars_not_driven.
-puts "There will be #{cars_not_driven} empty cars today."
-
-# uses the method puts to print and return to the next line; the string including the variable car# uses the method puts to print and return to the next line the string including the variable carpool_capacity.
-puts "We can transport #{carpool_capacity} people today."
-
-# uses the method puts to print and return to the next line; the string including the variable passengers.
-puts "We have #{passengers} passengers to carpool today."
-
-# uses the method puts to print and return to the next line; the string including the variable average_passengers_per_car.
-puts "We need to put about #{average_passengers_per_car} in each car."
+# the method puts prints the variable formatter; using string
+# interpolation it prints the arguments of itsel, a boolean value, 
+# a strings and an integer that follow
+puts formatter % [ formatter, true, "But it didn't sing.", 4]
 </code></pre>
 
             </div>
@@ -119,11 +111,15 @@ puts "We need to put about #{average_passengers_per_car} in each car."
             <ul class="nav nav-list">
               <li class="nav-header">Recent Posts</li>
               
+                <li><a href="/2013/11/04/ex1-comments.html">ex1-Comments</a></li>
+              
                 <li><a href="/2012/01/01/example-article.html">Example Article</a></li>
               
               <li class="nav-header">Tags</li>
               
                 <li><a href="/tags/example.html">#example (1)</a></a></li>
+              
+                <li><a href="/tags/lrthw.html">#lrthw (1)</a></a></li>
               
               <li class="nav-header">Contributors</li>
               <li class="nav-header">Elsewhere</li>

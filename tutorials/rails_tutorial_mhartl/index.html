@@ -58,68 +58,46 @@
         <div class="span9">
           <div class="row-fluid">
             <div id="main" role="main" class="well">
-              <p><a href="/index.html"><img src="rubilicious.jpg" alt="rubilicious" /></a></p>
+              <div class="well" style= "background-color: pink">
+    <div>
+     <a href="/index.html"><img src="/images/rubilious.jpg"></a>
+    </div>
+</div>
+<div class="span11" style= "background-color: #pink">
+    <div><h2>Rails Tutorial</h2>
+         <h3>&nbsp;by Michael Hartl</h3>
+    </div>
+    <div class="span2">
+       <p><img src="/images/jdiamond.jpg" class="img-circle"></p>
+       <p><a href="http://rubywithjendiamond.blogspot.com/" class="btn btn-jdblog">my personal blog &raquo;</a></p>
+       <p><a href="https://twitter.com/jendiamond"><button class="btn btn-twitter"><i class="icon-twitter"></i>Twitter</button></a></p>
+    </div><!--span2-->
+    <div class="span9">
+      <p>s is the industry standard of Rails Tutorials.</p>
+          </div><!--span8-->
+ </div><!--well-->
 
-<h1 id="learn-ruby-the-hard-way">Learn Ruby the Hard Way</h1>
-
-<h2 id="by-zed-shaw">by Zed Shaw</h2>
-
-<h3 id="example-5httprubylearncodethehardwayorgbookex5html"><a href="http://ruby.learncodethehardway.org/book/ex5.html">Example 5</a></h3>
-
-<h4 id="previoushttpjendiamondgithubiolearnrubythehardway2013-10-28-lrthw-ex4html-nbsp-nexthttpjendiamondgithubiolearnrubythehardway2013-10-28-lrthw-ex6html"><a href="http://jendiamond.github.io/learn_ruby_the_hard_way/2013-10-28-lrthw-ex4.html">Previous</a> &nbsp; <a href="http://jendiamond.github.io/learn_ruby_the_hard_way/2013-10-28-lrthw-ex6.html">Next</a></h4>
-
-<pre><code># The assignment operator   =   assigns the string 'Jen Diamond'to the variable name
-name = 'Jen Diamond'
-
-# The assignment operator   =   assigns the integer 44 to the variable age
-age = 44 # not a lie
-
-# The assignment operator   =   assigns the integer 69 to the variable height
-height = 69 # inches
-
-# The assignment operator   =   assigns the integer 101 to the variable weight
-weight = 101 # total lie
-
-# The assignment operator   =   assigns the string 'green' to the variable eyes
-eyes = 'green'
-
-# The assignment operator   =   assigns the string 'white-ish' to the variable teeth
-teeth = 'white-ish'
-
-# The assignment operator   =   assigns the string 'auburn-ish' to the variable hair
-hair = 'auburn-ish'
-
-# String interpolation 
-# %s and %d are formatters they are flags; 
-# s stands for string  
-# d stands for decimal number
-
-# the method puts outputs the string and the embedded variable name
-puts "Let's talk about %s." % name
-
-# the method puts outputs the string and the embedded variable height
-puts "She's %d inches tall." % height
-
-# the method puts outputs the string and the embedded variable  
-# which is an equation converting inches to centimeters using the variable of height in inches multiplied by 2.54
-puts "She is also %d centimeters tall which is the same thing." % [height * 2.54]
-
-# the method puts outputs the string and the embedded variable weight
-puts "Today she weighs %d " % weight + "but is exercising and dieting to improve this number." 
-
-# the method puts outputs the string and the embedded variable
-# which is an equation converting pounds to kilograms using the variable of weight in pounds multiplied by 2.2
-puts "Kilos sound better. Today she weighs %d kilos." % [weight / 2.2]
-
-# the method puts outputs the string and the embedded variables for eyes and hair
-puts "She has %s eyes and %s hair." % [eyes, hair]
-
-# the method puts outputs the string and the embedded variable teeth
-puts "Her teeth are usually %s depending on how much tea she has had." % teeth
-
-# the method puts outputs the string and the embedded variables age, height, weight and the sum of these variables
-puts "If I add %d, %d, and %d I get %d." % [age, height, weight, age + height + weight]
-</code></pre>
+<div class="row-fluid">
+  <div class="span4">
+  <h3>Exercises 1-11</h3>
+    <ul>
+      <li><a href="">Chapter &nbsp; 1</a></li>
+      <li><a href="">Chapter &nbsp; 2</a></li>
+      <li><a href="">Chapter &nbsp; 3</a></li>
+      <li><a href="">Chapter &nbsp; 4</a></li>
+      <li><a href="">Chapter &nbsp; 5</a></li>
+      <li><a href="">Chapter &nbsp; 6</a></li>
+      <li><a href="">Chapter &nbsp; 7</a></li>
+      <li><a href="">Chapter &nbsp; 8</a></li>
+      <li><a href="">Chapter &nbsp; 9</a></li>
+      <li><a href="">Chapter 10</a></li>
+      <li><a href="">Chapter 11</a></li>
+    </ul>
+  </div><!--/span-->
+    <div class="span4">
+    <h3> Helpful Links</h3>
+  </div><!--/span4-->
+</div><!--/row-->
 
 
             </div>
@@ -130,11 +108,15 @@ puts "If I add %d, %d, and %d I get %d." % [age, height, weight, age + height + 
             <ul class="nav nav-list">
               <li class="nav-header">Recent Posts</li>
               
+                <li><a href="/2013/11/04/ex1-comments.html">ex1-Comments</a></li>
+              
                 <li><a href="/2012/01/01/example-article.html">Example Article</a></li>
               
               <li class="nav-header">Tags</li>
               
                 <li><a href="/tags/example.html">#example (1)</a></a></li>
+              
+                <li><a href="/tags/lrthw.html">#lrthw (1)</a></a></li>
               
               <li class="nav-header">Contributors</li>
               <li class="nav-header">Elsewhere</li>

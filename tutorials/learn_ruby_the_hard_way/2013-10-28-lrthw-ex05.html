@@ -64,69 +64,63 @@
 
 <h2 id="by-zed-shaw">by Zed Shaw</h2>
 
-<h3 id="example-3httprubylearncodethehardwayorgbookex3html"><a href="http://ruby.learncodethehardway.org/book/ex3.html">Example 3</a></h3>
+<h3 id="example-5httprubylearncodethehardwayorgbookex5html"><a href="http://ruby.learncodethehardway.org/book/ex5.html">Example 5</a></h3>
 
-<h4 id="previoushttpjendiamondgithubiolearnrubythehardway2013-10-28-lrthw-ex2html-nbsp-nexthttpjendiamondgithubiolearnrubythehardway2013-10-28-lrthw-ex4html"><a href="http://jendiamond.github.io/learn_ruby_the_hard_way/2013-10-28-lrthw-ex2.html">Previous</a> &nbsp; <a href="http://jendiamond.github.io/learn_ruby_the_hard_way/2013-10-28-lrthw-ex4.html">Next</a></h4>
+<h4 id="previoushttpjendiamondgithubiolearnrubythehardway2013-10-28-lrthw-ex4html-nbsp-nexthttpjendiamondgithubiolearnrubythehardway2013-10-28-lrthw-ex6html"><a href="http://jendiamond.github.io/learn_ruby_the_hard_way/2013-10-28-lrthw-ex4.html">Previous</a> &nbsp; <a href="http://jendiamond.github.io/learn_ruby_the_hard_way/2013-10-28-lrthw-ex6.html">Next</a></h4>
 
-<p><strong>The method puts</strong> method prints the string that follows to the screen and returns the cursor to the next line.</p>
+<pre><code># The assignment operator   =   assigns the string 'Jen Diamond'to the variable name
+name = 'Jen Diamond'
 
-<pre><code>puts "I will now count my chickens:"
+# The assignment operator   =   assigns the integer 44 to the variable age
+age = 44 # not a lie
 
-# the puts method print the string that follows to the screen and returns the cursor to the next line.
-# Using the operator presedence; first the division operator divides 30 by 6 then adds the integers and prints them to the screen  puts "Hens", 25 + 30 / 6
+# The assignment operator   =   assigns the integer 69 to the variable height
+height = 69 # inches
 
-# the puts method prints the string that follows to the screen and returns the cursor to the next line.
-# Using the operator presedence; first the division operator divides 25 by 4 then subtracts and prints the result to the screen
-puts "Roosters" , 100 - 25 % 4
+# The assignment operator   =   assigns the integer 101 to the variable weight
+weight = 101 # total lie
 
-# the puts method prints the string that follows to the screen and returns the cursor to the next line.
-puts "Now I will count the eggs:"
+# The assignment operator   =   assigns the string 'green' to the variable eyes
+eyes = 'green'
 
-# the puts method prints the result of the equation. The equation is solved using operator presedence.
-puts  3 + 2 + 1 - 5 + 4 % 2 - 1 / 4 +6
+# The assignment operator   =   assigns the string 'white-ish' to the variable teeth
+teeth = 'white-ish'
 
-# the puts method prints the string that follows to the screen and returns the cursor to the next line.
-puts "Let's look at Boolean values..."
+# The assignment operator   =   assigns the string 'auburn-ish' to the variable hair
+hair = 'auburn-ish'
 
-# the puts method prints the string that follows to the screen and returns the cursor to the next line.
-puts "Is it true that 3 + 2 &lt; 5 - 7?"
+# String interpolation 
+# %s and %d are formatters they are flags; 
+# s stands for string  
+# d stands for decimal number
 
-# the puts method prints the result of the equation as a boolean (true or false) and returns the cursor to the next line. puts 3 + 2 &lt; 5 - 7
+# the method puts outputs the string and the embedded variable name
+puts "Let's talk about %s." % name
 
-# the puts method prints the string to the screen, returns the cursor to the next line and prints the result of the equation.
-puts "What is 3 + 2?", 3 + 2
+# the method puts outputs the string and the embedded variable height
+puts "She's %d inches tall." % height
 
-# the puts method prints the string to the screen, returns the cursor to the next line and prints the result of the equation.
-puts "What is 5 - 7?" , 5 - 7
+# the method puts outputs the string and the embedded variable  
+# which is an equation converting inches to centimeters using the variable of height in inches multiplied by 2.54
+puts "She is also %d centimeters tall which is the same thing." % [height * 2.54]
 
-# the puts method prints the string that follows to the screen and returns the cursor to the next line.
-puts "Oh, that's why it's false."
+# the method puts outputs the string and the embedded variable weight
+puts "Today she weighs %d " % weight + "but is exercising and dieting to improve this number." 
 
-# the puts method prints the string that follows to the screen and returns the cursor to the next line.
-puts "How about some more?"
+# the method puts outputs the string and the embedded variable
+# which is an equation converting pounds to kilograms using the variable of weight in pounds multiplied by 2.2
+puts "Kilos sound better. Today she weighs %d kilos." % [weight / 2.2]
 
-# the puts method prints the string that follows to the screen, returns the cursor to the next line where the comparison operator makes it's deduction.
-puts "Is it greater?" , 5.0 &gt; -2.0
+# the method puts outputs the string and the embedded variables for eyes and hair
+puts "She has %s eyes and %s hair." % [eyes, hair]
 
-# the puts method prints the string that follows to the screen, returns the cursor to the next line where the comparison operator makes it's deduction.
-puts "Is it greater or equal?", 5 &gt;= -2
+# the method puts outputs the string and the embedded variable teeth
+puts "Her teeth are usually %s depending on how much tea she has had." % teeth
 
-# the puts method prints the string that follows to the screen, returns the cursor to the next line where the comparison operator makes it's deduction.
-puts "Is it less or equal?" , 5 &lt;= -2
-
-# the puts method prints the result of the division to the screen and returns the cursor to the next line
-puts 38.0 / 6.0
-
-# definitions...
-puts "Addition - Adds values on either side of the operator"
-puts "Subtraction - Subtracts right hand operand from the left hand operand"
-puts "Multiplication - Multiplies values on either side of the operator"
-puts "Division - Divides left hand operand by right hand operand"
-puts "Modulus - Divides left hand operand by right hand operand and returns the remainder"
-puts "Exponent - Performs exponential (power) calculation on operators"
-puts "&lt; &lt;= &gt; &gt;= Comparison Operators"
-puts "The assignment operator = assigns the result of an operation to a variable"
+# the method puts outputs the string and the embedded variables age, height, weight and the sum of these variables
+puts "If I add %d, %d, and %d I get %d." % [age, height, weight, age + height + weight]
 </code></pre>
+
 
             </div>
           </div>
@@ -136,11 +130,15 @@ puts "The assignment operator = assigns the result of an operation to a variable
             <ul class="nav nav-list">
               <li class="nav-header">Recent Posts</li>
               
+                <li><a href="/2013/11/04/ex1-comments.html">ex1-Comments</a></li>
+              
                 <li><a href="/2012/01/01/example-article.html">Example Article</a></li>
               
               <li class="nav-header">Tags</li>
               
                 <li><a href="/tags/example.html">#example (1)</a></a></li>
+              
+                <li><a href="/tags/lrthw.html">#lrthw (1)</a></a></li>
               
               <li class="nav-header">Contributors</li>
               <li class="nav-header">Elsewhere</li>

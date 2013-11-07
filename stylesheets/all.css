@@ -19,12 +19,13 @@ body {
 .span9 {
   font-size: 15px;
 }
-#main
- {
-   background-color: #ccc;
+#main  {
+   background-color: #939393;
+   border: 0;
 }
 div.well.sidebar-nav{
-   background-color: #ccc;
+   background-color: pink;
+   border: #939393;
 }
 body{
   background-image:url('/images/rubilicious_blocks.jpg');

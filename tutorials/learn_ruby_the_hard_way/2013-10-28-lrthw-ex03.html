@@ -64,46 +64,68 @@
 
 <h2 id="by-zed-shaw">by Zed Shaw</h2>
 
-<h3 id="example-7httprubylearncodethehardwayorgbookex7html"><a href="http://ruby.learncodethehardway.org/book/ex7.html">Example 7</a></h3>
+<h3 id="example-3httprubylearncodethehardwayorgbookex3html"><a href="http://ruby.learncodethehardway.org/book/ex3.html">Example 3</a></h3>
 
-<h4 id="previoushttpjendiamondgithubiolearnrubythehardway2013-10-28-lrthw-ex6html-nbsp-nexthttpjendiamondgithubiolearnrubythehardway2013-10-28-lrthw-ex8html"><a href="http://jendiamond.github.io/learn_ruby_the_hard_way/2013-10-28-lrthw-ex6.html">Previous</a> &nbsp; <a href="http://jendiamond.github.io/learn_ruby_the_hard_way/2013-10-28-lrthw-ex8.html">Next</a></h4>
+<h4 id="previoushttpjendiamondgithubiolearnrubythehardwaylrthw-ex2html-nbsp-nexthttpjendiamondgithubiolearnrubythehardway2lrthw-ex4html"><a href="http://jendiamond.github.io/learn_ruby_the_hard_way/lrthw-ex2.html">Previous</a> &nbsp; <a href="http://jendiamond.github.io/learn_ruby_the_hard_way/2lrthw-ex4.html">Next</a></h4>
 
-<pre><code># the method puts prints the string
-puts "Mary had a little lamb."
+<p><strong>The method puts</strong> method prints the string that follows to the screen and returns the cursor to the next line.</p>
 
-# the method puts prints the string and using string interpolation 
-# embeds the variable snow into the string 
-puts "It's fleece was white as %s." % 'snow'
+<pre><code>puts "I will now count my chickens:"
 
-# the method puts prints the string
-puts "Everywhere that Mary went."
+# the puts method print the string that follows to the screen and returns the cursor to the next line.
+# Using the operator presedence; first the division operator divides 30 by 6 then adds the integers and prints them to the screen  puts "Hens", 25 + 30 / 6
 
-# the method puts prints the integer 10 
-puts "." * 10 # What did that do?
+# the puts method prints the string that follows to the screen and returns the cursor to the next line.
+# Using the operator presedence; first the division operator divides 25 by 4 then subtracts and prints the result to the screen
+puts "Roosters" , 100 - 25 % 4
 
-# variable are assigned
-end1 = "C"
-end2 = "h"
-end3 = "e"
-end4 = "e"
-end5 = "s"
-end6 = "e"
-end7 = "B"
-end8 = "u"
-end9 = "r"
-end10 = "g"
-end11 = "e"
-end12 = "r"
+# the puts method prints the string that follows to the screen and returns the cursor to the next line.
+puts "Now I will count the eggs:"
 
-# the method puts prints the concatonated variables 
-puts end1 + end2 + end3 + end4 + end5 + end6
-puts end7 + end8 + end9+ end10 + end11 + end12
+# the puts method prints the result of the equation. The equation is solved using operator presedence.
+puts  3 + 2 + 1 - 5 + 4 % 2 - 1 / 4 +6
 
-# the printf method prints to the screen but does not make a line return
-printf "Cheeseyburger"
+# the puts method prints the string that follows to the screen and returns the cursor to the next line.
+puts "Let's look at Boolean values..."
 
-# the method puts is creating a blank line in the terminal
-puts
+# the puts method prints the string that follows to the screen and returns the cursor to the next line.
+puts "Is it true that 3 + 2 &lt; 5 - 7?"
+
+# the puts method prints the result of the equation as a boolean (true or false) and returns the cursor to the next line. puts 3 + 2 &lt; 5 - 7
+
+# the puts method prints the string to the screen, returns the cursor to the next line and prints the result of the equation.
+puts "What is 3 + 2?", 3 + 2
+
+# the puts method prints the string to the screen, returns the cursor to the next line and prints the result of the equation.
+puts "What is 5 - 7?" , 5 - 7
+
+# the puts method prints the string that follows to the screen and returns the cursor to the next line.
+puts "Oh, that's why it's false."
+
+# the puts method prints the string that follows to the screen and returns the cursor to the next line.
+puts "How about some more?"
+
+# the puts method prints the string that follows to the screen, returns the cursor to the next line where the comparison operator makes it's deduction.
+puts "Is it greater?" , 5.0 &gt; -2.0
+
+# the puts method prints the string that follows to the screen, returns the cursor to the next line where the comparison operator makes it's deduction.
+puts "Is it greater or equal?", 5 &gt;= -2
+
+# the puts method prints the string that follows to the screen, returns the cursor to the next line where the comparison operator makes it's deduction.
+puts "Is it less or equal?" , 5 &lt;= -2
+
+# the puts method prints the result of the division to the screen and returns the cursor to the next line
+puts 38.0 / 6.0
+
+# definitions...
+puts "Addition - Adds values on either side of the operator"
+puts "Subtraction - Subtracts right hand operand from the left hand operand"
+puts "Multiplication - Multiplies values on either side of the operator"
+puts "Division - Divides left hand operand by right hand operand"
+puts "Modulus - Divides left hand operand by right hand operand and returns the remainder"
+puts "Exponent - Performs exponential (power) calculation on operators"
+puts "&lt; &lt;= &gt; &gt;= Comparison Operators"
+puts "The assignment operator = assigns the result of an operation to a variable"
 </code></pre>
 
             </div>
@@ -114,11 +136,15 @@ puts
             <ul class="nav nav-list">
               <li class="nav-header">Recent Posts</li>
               
+                <li><a href="/2013/11/04/ex1-comments.html">ex1-Comments</a></li>
+              
                 <li><a href="/2012/01/01/example-article.html">Example Article</a></li>
               
               <li class="nav-header">Tags</li>
               
                 <li><a href="/tags/example.html">#example (1)</a></a></li>
+              
+                <li><a href="/tags/lrthw.html">#lrthw (1)</a></a></li>
               
               <li class="nav-header">Contributors</li>
               <li class="nav-header">Elsewhere</li>

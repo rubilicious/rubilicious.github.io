@@ -64,23 +64,51 @@
 
 <h2 id="by-zed-shaw">by Zed Shaw</h2>
 
-<h3 id="example-2httprubylearncodethehardwayorgbookex2html"><a href="http://ruby.learncodethehardway.org/book/ex2.html">Example 2</a></h3>
+<h3 id="example-4httprubylearncodethehardwayorgbookex4html"><a href="http://ruby.learncodethehardway.org/book/ex4.html">Example 4</a></h3>
 
-<h4 id="previoushttpjendiamondgithubiolearnrubythehardway2013-10-28-lrthw-ex1html-nbsp-nexthttpjendiamondgithubiolearnrubythehardway2013-10-28-lrthw-ex3html"><a href="http://jendiamond.github.io/learn_ruby_the_hard_way/2013-10-28-lrthw-ex1.html">Previous</a> &nbsp; <a href="http://jendiamond.github.io/learn_ruby_the_hard_way/2013-10-28-lrthw-ex3.html">Next</a></h4>
+<h4 id="previoushttpjendiamondgithubiolearnrubythehardway2013-10-28-lrthw-ex3html-nbsp-nexthttpjendiamondgithubiolearnrubythehardway2013-10-28-lrthw-ex5html"><a href="http://jendiamond.github.io/learn_ruby_the_hard_way/2013-10-28-lrthw-ex3.html">Previous</a> &nbsp; <a href="http://jendiamond.github.io/learn_ruby_the_hard_way/2013-10-28-lrthw-ex5.html">Next</a></h4>
 
-<p>This execise is about commenting out sections of code to make it
- more readable or to check the function of a cerain section of
-code by eliminating it. <a href="http://en.wikipedia.org/wiki/Number_sign">The symbol #</a> is called an octothorpe, hash,
- pound sign, number sign.</p>
+<pre><code># defining the variable cars with the integer 100
+cars = 100
 
-<pre><code># A comment, this is so you can read your program later.
-# Anything after the # IS IGNORED
+# defining the variable space_in_car with the floating point 4.0
+space_in_car = 4.0
 
-puts "I could have code like this." # and the comment after
+# defining the variable drivers with the integer 30
+drivers = 30
 
-# You can also use a comment to "disable code"
-# puts "This will not run."
-puts "This will run."
+# defining the variable passengers with the integer 90
+passengers = 90
+
+# defining the variable passengers with the integer 90
+cars_not_driven = cars - drivers
+
+# defining the variable cars_driven with the output of the variable drivers
+cars_driven = drivers
+
+# defining the variable carpool_capacity with the equation cars_driven multiplied by space_in_car
+carpool_capacity = cars_driven * space_in_car
+
+# defining the variable average_passengers with the equation passengers divided by cars driven
+average_passengers_per_car = passengers / cars_driven
+
+# uses the method puts to print and return to the next line; the string including the variable cars.
+puts "There are #{cars} cars available."
+
+# uses the method puts to print and return to the next line; the string including the variable drivers.
+puts "There are only #{drivers} drivers available."
+
+# uses the method puts to print and return to the next line; the string including the variable cars_not_driven.
+puts "There will be #{cars_not_driven} empty cars today."
+
+# uses the method puts to print and return to the next line; the string including the variable car# uses the method puts to print and return to the next line the string including the variable carpool_capacity.
+puts "We can transport #{carpool_capacity} people today."
+
+# uses the method puts to print and return to the next line; the string including the variable passengers.
+puts "We have #{passengers} passengers to carpool today."
+
+# uses the method puts to print and return to the next line; the string including the variable average_passengers_per_car.
+puts "We need to put about #{average_passengers_per_car} in each car."
 </code></pre>
 
             </div>
@@ -91,11 +119,15 @@ puts "This will run."
             <ul class="nav nav-list">
               <li class="nav-header">Recent Posts</li>
               
+                <li><a href="/2013/11/04/ex1-comments.html">ex1-Comments</a></li>
+              
                 <li><a href="/2012/01/01/example-article.html">Example Article</a></li>
               
               <li class="nav-header">Tags</li>
               
                 <li><a href="/tags/example.html">#example (1)</a></a></li>
+              
+                <li><a href="/tags/lrthw.html">#lrthw (1)</a></a></li>
               
               <li class="nav-header">Contributors</li>
               <li class="nav-header">Elsewhere</li>

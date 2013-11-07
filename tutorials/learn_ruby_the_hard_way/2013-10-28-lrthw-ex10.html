@@ -58,49 +58,81 @@
         <div class="span9">
           <div class="row-fluid">
             <div id="main" role="main" class="well">
-              <h2 id="proper-github-workflow">Proper Github Workflow</h2>
+              <p><a href="/index.html"><img src="rubilicious.jpg" alt="rubilicious" /></a></p>
 
-<p><img src="https://bundler.campfirenow.com/room/566068/uploads/4699656/GitHub-Diagram.png" /></p>
+<h1 id="learn-ruby-the-hard-way">Learn Ruby the Hard Way</h1>
 
-<h4 id="fork-the-repo-original-repo-you-want-to-work-on-to-your-github-account-repo">Fork the Repo (original repo) you want to work on to your Github account repo</h4>
-<pre><code>Press the Fork button (which is on Github.com)
+<h2 id="by-zed-shaw">by Zed Shaw</h2>
+
+<h3 id="example-10httprubylearncodethehardwayorgbookex10html"><a href="http://ruby.learncodethehardway.org/book/ex10.html">Example 10</a></h3>
+
+<h4 id="previoushttpjendiamondgithubiolearnrubythehardway2013-10-28-lrthw-ex9html-nbsp-nexthttpjendiamondgithubiolearnrubythehardway2013-10-28-lrthw-ex11html"><a href="http://jendiamond.github.io/learn_ruby_the_hard_way/2013-10-28-lrthw-ex9.html">Previous</a> &nbsp; <a href="http://jendiamond.github.io/learn_ruby_the_hard_way/2013-10-28-lrthw-ex11.html">Next</a></h4>
+
+<p>The variable tabby_cat is assigned the value of the string;<br />
+The \t (backslash t) tabs the line in</p>
+
+<pre><code>tabby_cat = "\tI'm tabbed in."
 </code></pre>
 
-<p>https://help.github.com/articles/fork-a-repo</p>
+<p>The variable persian_cat is assigned the value of the string;<br />
+The \n (backslash n) puts the rest of the string on a new line</p>
 
-<p>Explanation: It creates a copy of the Repo to your account.</p>
-
-<h4 id="clone-the-repo-on-your-github-account-to-local">Clone the Repo on your Github account to local</h4>
-<pre><code>git clone https://github.com/RGSoCBundler/rgsocbundler.github.io.git
+<pre><code>persian_cat = "I'm split \non a line."
 </code></pre>
 
-<h4 id="link-the-original-repo-to-your-local-repo-so-you-can-pull-the-latest-updates-and-make-sure-your-copy-is-in-sync-with-the-original-repo">Link the original repo to your local repo so you can pull the latest updates and make sure your copy is in sync with the original repo</h4>
-<pre><code>cd rgsocbundler.github.io
-git remote add upstream https://github.com/RGSoCBundler/rgsocbundler.github.io.git
+<p>The variable backslash_cat is assigned the value of the string;<br />
+The \ (backslash backslash) prints a backslash character</p>
+
+<pre><code>backslash_cat = "I'm \\ a \\ cat."
 </code></pre>
 
-<h4 id="create-feature-branch">Create Feature Branch</h4>
-<pre><code>git checkout -b branch-name
+<p>The variable fat_cat is assigned the value of the list MY_HEREDOC.<br />
+This is a <strong>HEREDOC</strong>. The &#171;&#160;symbol with a name written in uppercase acts like the &#171;PARAGRAPH we used earlier. You can write as many lines as you want in between  You can call it anything you want as long as you include the chevrons (&#171;) before and end it with the same name.<br />
+Heredoc - The term refers to a form of multiline string literals that preserve line breaks and other whitespace, including indentation, in the text.*  <a href="http://en.wikipedia.org/wiki/Here_document">Wikipedia</a></p>
 
-(example: git checkout -b pull-cheatsheet)
+<pre><code>fat_cat =
+&lt;&lt;MY_HEREDOC
+I'll do a list:
+\t* Cat food
+\t* Fishies
+\t* Catnip\n\t* Grass
+MY_HEREDOC&gt;&gt;
 </code></pre>
 
-<p>(The git checkout -b command automatically switches to the branch)</p>
+<p>The puts method prints the variables</p>
 
-<h4 id="check-that-you-are-on-the-correct-branch-make-sure-there-is-an-asterik-next-to-the-branch-name">Check that you are on the correct branch. Make sure there is an asterik next to the branch name.</h4>
-<pre><code>git branch
+<pre><code>puts "cat"
+puts tabby_cat
+puts persian_cat
+puts backslash_cat
+puts fat_cat
 </code></pre>
 
-<h4 id="make-your-changesfixesfeatures-and-commit-it-to-origin-the-repo-on-your-github-account">Make Your Changes/Fixes/Features and commit it to origin (the repo on your github account)</h4>
-<pre><code>git add .
-git commit -m "write what changes you made"
-git push origin pull-cheatsheet
+<p>The same effect as the heredoc can be achieved with a triple "</p>
+
+<pre><code>fattest_cat =
+"""
+I'll do a list:
+\t* Cat food
+\t* Fishies
+\t* Catnip\n\t* Grass
+"""
+puts fattest_cat
 </code></pre>
 
-<h4 id="send-a-pull-request---from-origin-to-upstream-your-account-repo-to-the-original-repo">Send a Pull Request - from origin to upstream (your account repo to the original repo)</h4>
-<pre><code>Click Compare &amp; pull request or the Green button on your Github repository
-</code></pre>
+<p><strong><code>$ ruby ex10.rb</code> returns:</strong></p>
 
+<pre><code>ESCAPE SEQUENCES &amp; FORMAT STRINGS
+  I'm tabbed in.
+I'm split
+on a line.
+I'm \ a \ cat.
+Things to Buy for the Cats:
+  * Cat Food
+  * Fish
+  * Catnip
+  * Grass
+</code></pre>
 
             </div>
           </div>

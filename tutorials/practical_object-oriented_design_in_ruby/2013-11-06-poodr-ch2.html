@@ -58,45 +58,26 @@
         <div class="span9">
           <div class="row-fluid">
             <div id="main" role="main" class="well">
-              <p><a href="/index.html"><img src="rubilicious.jpg" alt="rubilicious" /></a></p>
+              <p>This is excerpted from the Practical Object-Oriented Design in Ruby book by Sandi Metz</p>
 
-<h1 id="learn-ruby-the-hard-way">Learn Ruby the Hard Way</h1>
+<p>attr_reader -</p>
 
-<h2 id="by-zed-shaw">by Zed Shaw</h2>
+<p>instance variable -</p>
 
-<h3 id="example-10httprubylearncodethehardwayorgbookex10html"><a href="http://ruby.learncodethehardway.org/book/ex10.html">Example 10</a></h3>
+<p>## Writing Code that Embraces Change</p>
 
-<h4 id="previoushttpjendiamondgithubiolearnrubythehardway2013-10-28-lrthw-ex9html-nbsp-nexthttpjendiamondgithubiolearnrubythehardway2013-10-28-lrthw-ex11html"><a href="http://jendiamond.github.io/learn_ruby_the_hard_way/2013-10-28-lrthw-ex9.html">Previous</a> &nbsp; <a href="http://jendiamond.github.io/learn_ruby_the_hard_way/2013-10-28-lrthw-ex11.html">Next</a></h4>
+<p>### Depend on Behavior, Not Data</p>
 
-<pre><code># the variable tabby_cat is assigned the value of the string;
-# the \t (backslash t) tabs the line in
-tabby_cat = "\tI'm tabbed in."
+<p>**Hide instance Variables  **
+   Don't directly refer to variables</p>
 
-# the variable persian_cat is assigned the value of the string;
-# the \n (backslash n) puts the rest of the string on a new line
-persian_cat = "I'm split \non a line."
-
-# the variable backslash_cat is assigned the value of the string;
-# the \\ (backslash backslash) prints a backslash character
-backslash_cat = "I'm \\ a \\ cat."
-
-# the variable fat_cat is assigned the value of the list MY_HEREDOC;
-# This is a HEREDOC. The &lt;&lt; symbol with a name written in uppercase acts like the &lt;&lt;PARAGRAPH you can write as many lines as you want in between 
-fat_cat = 
-&lt;&lt;MY_HEREDOC
-I'll do a list:
-\t* Cat food
-\t* Fishies
-\t* Catnip\n\t* Grass
-MY_HEREDOC
-
-# the puts method prints the variables
-puts "cat"
-puts tabby_cat
-puts persian_cat
-puts backslash_cat
-puts fat_cat
+<pre><code>def ratio
+  @chainring / @cog to_f
+end
 </code></pre>
+
+<p>### Enforce Single Responsibility Everywhere:w</p>
+
 
             </div>
           </div>
@@ -106,11 +87,15 @@ puts fat_cat
             <ul class="nav nav-list">
               <li class="nav-header">Recent Posts</li>
               
+                <li><a href="/2013/11/04/ex1-comments.html">ex1-Comments</a></li>
+              
                 <li><a href="/2012/01/01/example-article.html">Example Article</a></li>
               
               <li class="nav-header">Tags</li>
               
                 <li><a href="/tags/example.html">#example (1)</a></a></li>
+              
+                <li><a href="/tags/lrthw.html">#lrthw (1)</a></a></li>
               
               <li class="nav-header">Contributors</li>
               <li class="nav-header">Elsewhere</li>

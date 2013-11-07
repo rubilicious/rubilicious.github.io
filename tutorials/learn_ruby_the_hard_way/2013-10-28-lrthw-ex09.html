@@ -64,58 +64,34 @@
 
 <h2 id="by-zed-shaw">by Zed Shaw</h2>
 
-<h3 id="example-6httprubylearncodethehardwayorgbookex6html"><a href="http://ruby.learncodethehardway.org/book/ex6.html">Example 6</a></h3>
+<h3 id="example-9httprubylearncodethehardwayorgbookex9html"><a href="http://ruby.learncodethehardway.org/book/ex9.html">Example 9</a></h3>
 
-<h4 id="previoushttpjendiamondgithubiolearnrubythehardway2013-10-28-lrthw-ex5html-nbsp-nexthttpjendiamondgithubiolearnrubythehardway2013-10-28-lrthw-ex7html"><a href="http://jendiamond.github.io/learn_ruby_the_hard_way/2013-10-28-lrthw-ex5.html">Previous</a> &nbsp; <a href="http://jendiamond.github.io/learn_ruby_the_hard_way/2013-10-28-lrthw-ex7.html">Next</a></h4>
+<h4 id="previoushttpjendiamondgithubiolearnrubythehardway2013-10-28-lrthw-ex8html-nbsp-nexthttpjendiamondgithubiolearnrubythehardway2013-10-28-lrthw-ex10html"><a href="http://jendiamond.github.io/learn_ruby_the_hard_way/2013-10-28-lrthw-ex8.html">Previous</a> &nbsp; <a href="http://jendiamond.github.io/learn_ruby_the_hard_way/2013-10-28-lrthw-ex10.html">Next</a></h4>
 
-<pre><code># the variable x is being assigned  with the following string;
-# Using string interpolation the integer 10 is embeded inside the string
-x = "There are #{10} types of people."
+<pre><code># the variable days is assigned in a string
+days = "Mon Tues Wed Thu Fri Sat Sun"
 
-# the variable binary is being assigned  with the string binary
-binary = "binary"
+# the variable months is assigned with line breaks \n means newline
+months = "Jan\nFeb\nMar\nApr\nMay\nJun\Jul\nAug"
 
-# the variable don't is being assigned  with the string do_not
-do_not = "don't"
+# the method puts print the string then on a new line it prints 
+# the contents of the variable days
+puts "Here are the days: ", days
 
-# the variable y is being assigned  with the following string
-# Using string interpolation the variable binary and do_not is embeded inside the string
-y = "Those who know #{binary} and those who #{do_not}."
+# the method puts print the string then on a new line it prints 
+# the contents of the variable months
+puts "Here are the months: " , months
 
-# the method puts prints the variable x to the screen
-puts x
+# the method puts prints the paragraph 
+puts &lt;&lt;PARAGRAPH
+  There's something going on here.
+  With this PARAGRAPH thing
+  We'll be able to type as much as we like.
+  Even 4, 5 or even 6 lines if we want 
+PARAGRAPH
 
-# the method puts prints the variable y to the screen
-puts y
-
-# the method puts prints the string and using string interpolation 
-# embeds the variable x
-puts "I said: #{x}."
-
-# the method puts prints the string to the screen; 
-# using string interpolation it embeds the variable y
-puts "I also said: '#{y}'"
-
-# the variable hilarious is being assigned with the boolean value false
-hilarious = false
-
-# the method puts prints the string and using string interpolation 
-# embeds the variable y
-joke_evaluation = "Isn't that joke so funny?! #{hilarious}"
-
-# the method puts prints the variable joke_evaluation
-puts joke_evaluation 
-
-# the variable w is being assigned with the following string
-w = "This is the left side of..."
-
-# the variable e is being assigned with the following string
-e = "a string with a right side."
-
-# the method puts prints the variables w and e
-puts w + e
+puts "Here are the months: " , months
 </code></pre>
-
 
             </div>
           </div>
@@ -125,11 +101,15 @@ puts w + e
             <ul class="nav nav-list">
               <li class="nav-header">Recent Posts</li>
               
+                <li><a href="/2013/11/04/ex1-comments.html">ex1-Comments</a></li>
+              
                 <li><a href="/2012/01/01/example-article.html">Example Article</a></li>
               
               <li class="nav-header">Tags</li>
               
                 <li><a href="/tags/example.html">#example (1)</a></a></li>
+              
+                <li><a href="/tags/lrthw.html">#lrthw (1)</a></a></li>
               
               <li class="nav-header">Contributors</li>
               <li class="nav-header">Elsewhere</li>

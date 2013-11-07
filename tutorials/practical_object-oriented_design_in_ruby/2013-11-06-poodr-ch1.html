@@ -58,40 +58,26 @@
         <div class="span9">
           <div class="row-fluid">
             <div id="main" role="main" class="well">
-              <p><a href="/index.html"><img src="rubilicious.jpg" alt="rubilicious" /></a></p>
+              <p>This is excerpted from the Practical Object-Oriented Design in Ruby book by Sandi Metz</p>
 
-<h1 id="learn-ruby-the-hard-way">Learn Ruby the Hard Way</h1>
+<p>attr_reader -</p>
 
-<h2 id="by-zed-shaw">by Zed Shaw</h2>
+<p>instance variable -</p>
 
-<h3 id="example-9httprubylearncodethehardwayorgbookex9html"><a href="http://ruby.learncodethehardway.org/book/ex9.html">Example 9</a></h3>
+<p>## Writing Code that Embraces Change</p>
 
-<h4 id="previoushttpjendiamondgithubiolearnrubythehardway2013-10-28-lrthw-ex8html-nbsp-nexthttpjendiamondgithubiolearnrubythehardway2013-10-28-lrthw-ex10html"><a href="http://jendiamond.github.io/learn_ruby_the_hard_way/2013-10-28-lrthw-ex8.html">Previous</a> &nbsp; <a href="http://jendiamond.github.io/learn_ruby_the_hard_way/2013-10-28-lrthw-ex10.html">Next</a></h4>
+<p>### Depend on Behavior, Not Data</p>
 
-<pre><code># the variable days is assigned in a string
-days = "Mon Tues Wed Thu Fri Sat Sun"
+<p>**Hide instance Variables  **
+   Don't directly refer to variables</p>
 
-# the variable months is assigned with line breaks \n means newline
-months = "Jan\nFeb\nMar\nApr\nMay\nJun\Jul\nAug"
-
-# the method puts print the string then on a new line it prints 
-# the contents of the variable days
-puts "Here are the days: ", days
-
-# the method puts print the string then on a new line it prints 
-# the contents of the variable months
-puts "Here are the months: " , months
-
-# the method puts prints the paragraph 
-puts &lt;&lt;PARAGRAPH
-  There's something going on here.
-  With this PARAGRAPH thing
-  We'll be able to type as much as we like.
-  Even 4, 5 or even 6 lines if we want 
-PARAGRAPH
-
-puts "Here are the months: " , months
+<pre><code>def ratio
+  @chainring / @cog to_f
+end
 </code></pre>
+
+<p>### Enforce Single Responsibility Everywhere:w</p>
+
 
             </div>
           </div>
@@ -101,11 +87,15 @@ puts "Here are the months: " , months
             <ul class="nav nav-list">
               <li class="nav-header">Recent Posts</li>
               
+                <li><a href="/2013/11/04/ex1-comments.html">ex1-Comments</a></li>
+              
                 <li><a href="/2012/01/01/example-article.html">Example Article</a></li>
               
               <li class="nav-header">Tags</li>
               
                 <li><a href="/tags/example.html">#example (1)</a></a></li>
+              
+                <li><a href="/tags/lrthw.html">#lrthw (1)</a></a></li>
               
               <li class="nav-header">Contributors</li>
               <li class="nav-header">Elsewhere</li>

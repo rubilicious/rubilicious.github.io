@@ -5,10 +5,52 @@
   <id>http://blog.url.com/</id>
   <link href="http://blog.url.com/"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2012-01-01T08:00:00Z</updated>
+  <updated>2013-11-04T20:23:00Z</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>ex1-Comments</title>
+    <link rel="alternate" href="/2013/11/04/ex1-comments.html"/>
+    <id>/2013/11/04/ex1-comments.html</id>
+    <published>2013-11-04T20:23:00Z</published>
+    <updated>2013-11-04T20:23:00Z</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;a href="/index.html"&gt;&lt;img src="rubilicious.jpg" alt="rubilicious" /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id="learn-ruby-the-hard-way"&gt;Learn Ruby the Hard Way&lt;/h1&gt;
+
+&lt;h2 id="by-zed-shaw"&gt;by Zed Shaw&lt;/h2&gt;
+
+&lt;h3 id="example-0--1httprubylearncodethehardwayorgbookex1html"&gt;&lt;a href="http://ruby.learncodethehardway.org/book/ex1.html"&gt;Example 0 &amp;amp; 1&lt;/a&gt;&lt;/h3&gt;
+
+&lt;h4 id="nexthttpjendiamondgithubiolearnrubythehardwaylrthw-ex02html"&gt;&lt;a href="http://jendiamond.github.io/learn_ruby_the_hard_way/lrthw-ex02.html"&gt;Next&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;Example 0 The Setup&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Create a folder/directory and label it learn_ruby_the_hard_way. Put all the examples you create in this file. Name your files ex01.rb, ex02.rb etc.&lt;/p&gt;
+
+&lt;p&gt;There are a lot of things that people don't remember were confusing or diffucult when they first started.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Example 1 A Good 1st Program&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;This is a great way to get started. 
+    #puts is a method that will print a line then return to a new line
+    puts "hello world"
+    puts "hello from jen diamond"
+    #print is a method that prints a line but does not move to a new line
+    print "hello printy"
+    puts 'hello printier'
+    # The octothorpe, pound or hash tag comments out a line
+    # puts "hello again"
+    # puts "i like typing this"
+    # puts 'yay! printing.'
+    # puts "i'd much rather you 'not'."
+    # puts 'i "said" do not touch this.'&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Example Article</title>
     <link rel="alternate" href="/2012/01/01/example-article.html"/>
