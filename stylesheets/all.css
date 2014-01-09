@@ -23,11 +23,12 @@ body {
    background-color: #939393;
    border: 0;
 }
-div.well.sidebar-nav{
+div.well.sidebar-nav {
    background-color: pink;
    border: #939393;
 }
-body{
-  background-image:url('/images/rubilicious_blocks.jpg');
+body {
+/*  background-image:url('/images/rubilicious_blocks.jpg');*/
+  background-color: #ccc;
 }
 
