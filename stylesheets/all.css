@@ -1,6 +1,7 @@
 body {
   padding-top: 60px;
   padding-bottom: 40px;
+  background-color: #ffc;
 }
 
 .sidebar-nav {
@@ -19,16 +20,13 @@ body {
 .span9 {
   font-size: 15px;
 }
+
 #main  {
    background-color: #939393;
    border: 0;
 }
+
 div.well.sidebar-nav {
    background-color: pink;
    border: #939393;
 }
-body {
-/*  background-image:url('/images/rubilicious_blocks.jpg');*/
-  background-color: #ccc;
-}
-
