@@ -31,6 +31,11 @@ div.well.sidebar-nav {
    border: #939393;
 }
 
+a {
+    outline: 0;
+    text-decoration: none;
+}
+
 a:link {
     color: #666;
 }
@@ -41,6 +46,7 @@ a:visited {
 
 a:hover {
     color: #F06;
+    text-decoration: none;
 }
 
 a:active {
