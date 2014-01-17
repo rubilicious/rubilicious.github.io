@@ -1,7 +1,7 @@
 body {
   padding-top: 60px;
   padding-bottom: 40px;
-  background-color: #ededed;
+  background-color: #ffc;
 }
 
 .sidebar-nav {
@@ -30,28 +30,3 @@ div.well.sidebar-nav {
    background-color: pink;
    border: #939393;
 }
-
-li.nav-header {
-  color: #333;
-  font-variant:small-caps;
-  font-weight:bold;
-}
-
-a:link {
-    color: #333;
-}
-
-a:visited {
-    color: #4d4d4d;
-}
-
-a:hover {
-    color: #F06;
-}
-
-a:active {
-    color: #c30;
-}
-
-
-
