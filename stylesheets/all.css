@@ -28,7 +28,9 @@ body {
 
 div.well.sidebar-nav {
    background-color: pink;
-   border: #939393;
+   border: #fff;
+   border-style: solid;
+   border-width: 1px;
 }
 
 a {
