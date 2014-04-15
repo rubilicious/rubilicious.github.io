@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Rubilicious</title>
+    <meta charset="utf-8" />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jen Diamond's Ruby and Rails Blog">
+    <meta name="author" content="Jen Diamond">
+    <link rel="alternate" type="application/rss+xml"
+      title="Rubilicious - RSS"
+      href="http://jendiamond.github.io/feed.xml"
+    />
+    <link rel="alternate" type="application/atom+xml"
+      title="Rubilicious - RSS"
+      href="http://jendiamond.github.io/feed.xml"
+    />
+    <link href="/stylesheets/bootstrap.min.css" rel="stylesheet">
+    <link href="/stylesheets/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/stylesheets/social-buttons.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/stylesheets/buttons.css" rel="stylesheet">
+    <link href="/stylesheets/all.css" rel="stylesheet">
+
+
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="/stylesheets/html5shiv.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="/"><i class="icon-fixed-width icon-home"></i> Rubilicious</a>
+          <div class="nav-collapse collapse">
+            <p class="navbar-text pull-right">
+              Fork this blog on <a href="https://github.com/jendiamond/jendiamond.github.io" class="navbar-link">Github</a>!
+            </p>
+            <ul class="nav">
+              <li><a rel="alternate" href="/feed.xml">RSS</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span9">
+          <div class="row-fluid">
+            <div id="main" role="main" class="well">
+              <div class="well" style="background-color: pink">
+    <div>
+     <a href="/index.html"><img src="/images/rubilious.jpg" /></a>
+    </div>
+</div>
+
+<h2 id="creating-your-own-gem">Creating your own Gem</h2>
+
+<ol>
+  <li>
+    <p>Run this command in your Terminal. This creates and names all the files you need for your gem. We are going to create a Lorem Ipsum Generator; you can call it whatever you want but seeing as we are creating a <a href="http://en.wikipedia.org/wiki/Lorem_ipsum">Lorem Ipsum</a> generator we'll call it lorem. <a href="http://guides.rubygems.org/patterns/">Read about gem naming conventions.</a> </p>
+
+    <pre><code> $ bundle gem lorem
+</code></pre>
+
+    <p>Notice that this command also initialized a git repository for you on your local machine and gives you the path name for it.  </p>
+  </li>
+  <li>
+    <p>cd into lorem. Make your <code>lorem.gemspec</code> file look like this. Add your name and your email. <a href="http://docs.rubygems.org/read/chapter/20">Read more about the gemspec file.</a> </p>
+
+    <pre><code> \# coding: utf-8
+ lib = File.expand_path('../lib', __FILE__)
+ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+ require 'lorem/version'
+
+ Gem::Specification.new do |spec|
+     spec.name          = "lorem"
+     spec.version       = Lorem::VERSION
+     spec.platform      = Gem::Platform::RUBY
+     spec.authors       = ["your name"]
+     spec.email         = ["your@email.com"]
+     spec.homepage      = ""
+     spec.summary       = %q{Jenipsum generator}
+     spec.description   = %q{Generates jenipsum text}
+     spec.license       = "MIT"
+
+     spec.add_development_dependency "bundler", "~&gt; 1.3"
+     spec.add_development_dependency "rake"
+
+     spec.files         = `git ls-files`.split($/)
+     spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
+     spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
+     spec.require_paths = ["lib"]
+
+ end
+</code></pre>
+
+    <p>If you neglect to change these areas you will get this error when you go to run $ gem build lipsum.gemspec </p>
+
+    <pre><code> ERROR:  While executing gem ... (Gem::InvalidSpecificationException) "FIXME" or "TODO" is not a description
+</code></pre>
+  </li>
+  <li>
+    <p>Open your file <code>lib/lipsum.rb</code> Make it look like this. This is the file that is loaded when people require your gem. You can customize it with the behavior you want it to have.</p>
+
+    <pre><code> require "lipsum/version"
+    
+ module Lipsum
+     def self.ipsum
+         "Lorem ipsum bespoke flexitarian bitters, non next level consequat stumptown  
+         pork belly selfies sartorial. Laborum vegan excepteur ad, hashtag id non.  
+         Eiusmod Tonx squid intelligentsia biodiesel art party YOLO bicycle rights  
+         fashion axe, +1 roof party non quis do. Trust fund nesciunt odio, mustache  
+         Terry Richardson Odd Future vinyl thundercats kogi placeat cliche put a bird  
+         on it aliquip lo-fi. Pickled hashtag bitters american apparel fanny pack tempor.  
+         Accusamus pork belly do Williamsburg nihil, salvia eiusmod tattooed excepteur  
+         in street art. Meggings Tonx forage occaecat magna tote bag."
+     end
+ end
+</code></pre>
+  </li>
+  <li>
+    <p>Run this command.</p>
+
+    <pre><code> $ gem build lipsum.gemspec
+</code></pre>
+  </li>
+</ol>
+
+<h3 id="congratulations-you-have-created-a-gem">Congratulations, you have created a gem.</h3>
+
+<h3 id="now-you-can-add-thorhttprgsocbundlergithubiocheatsheetsadding-cli-to-a-gem-using-thorhtml"><a href="http://rgsocbundler.github.io/cheatsheets/adding-cli-to-a-gem-using-thor.html">Now you can add Thor.</a></h3>
+
+<p><strong>Here are some good resources if you have questions.</strong><br />
+<a href="http://railscasts.com/episodes/245-new-gem-with-bundler">Video tutorial that will explain all the files and file structure.</a><br />
+<a href="http://bundler.io/v1.3/rubygems.html">This is Bundler's Tutorial</a><br />
+<a href="http://guides.rubygems.org/make-your-own-gem/">RubyGems Guides</a></p>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="span3">
+          <div class="well sidebar-nav">
+            <br /><br />
+            <ul class="nav nav-list">
+              <li class="nav-header">Ruby Phases</li>
+              <li><a href="/phase1">Phase 1</a></li>
+              <li><a href="/phase2">Phase 2</a></li>
+              <li><a href="/phase3">Phase 3</a></li>
+              <li><a href="/bigbag">Big Bag of Little Things</a></li>
+              <li><a href="/teachingtips">Teaching Tips</a></li>
+            </ul>
+          </div><!--/.well -->
+
+          <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+              <li class="nav-header">Cheat Sheets</li>
+              <li><a href="/cheatsheets/pull.html">Proper Git Hub Workflow</a></li>
+              <li><a href="/cheatsheets/bundlerfordev.html">Bundler for Development</a></li>
+              <li><a href="/cheatsheets/create_gem.html">Create a Gem</a></li>
+              <li><a href="/cheatsheets/adding-cli-to-a-gem-using-thor.html">Using Thor to Add CLI</a></li>
+            </ul>
+          </div><!--/.well -->
+
+          <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+              <li class="nav-header">References</li>
+              <li><a href = "http://daringfireball.net/projects/markdown/basics">Markdown Basics</a></li>
+              <li><a href = "http://haml.info/docs/yardoc/file.REFERENCE.html">Haml Doc</a></li>
+              <li><a href = "http://pcottle.github.io/learnGitBranching">Learn Git Branching</a></li>
+              <li><a href = "http://git-scm.com/documentation">Git Documentation</a></li>
+              <li><a href="http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html">Git Commit Messages</a></li>
+              <li><a href = "http://b-simple.de/download/restful_rails_en.pdf">RESTful Rails Development</a></li>
+              <li><a href = "https://speakerdeck.com/jendiamond/the-terminal-know-your-command-line-an-introduction">The Terminal</a></li>
+            </ul>
+          </div><!--/.well -->
+
+        </div><!--/span-->
+      </div>
+    </div>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="/javascripts/bootstrap.min.js"></script>
+  </body>
+</html>
+
+

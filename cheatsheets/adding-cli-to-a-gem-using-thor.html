@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Rubilicious</title>
+    <meta charset="utf-8" />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jen Diamond's Ruby and Rails Blog">
+    <meta name="author" content="Jen Diamond">
+    <link rel="alternate" type="application/rss+xml"
+      title="Rubilicious - RSS"
+      href="http://jendiamond.github.io/feed.xml"
+    />
+    <link rel="alternate" type="application/atom+xml"
+      title="Rubilicious - RSS"
+      href="http://jendiamond.github.io/feed.xml"
+    />
+    <link href="/stylesheets/bootstrap.min.css" rel="stylesheet">
+    <link href="/stylesheets/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/stylesheets/social-buttons.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/stylesheets/buttons.css" rel="stylesheet">
+    <link href="/stylesheets/all.css" rel="stylesheet">
+
+
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="/stylesheets/html5shiv.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="/"><i class="icon-fixed-width icon-home"></i> Rubilicious</a>
+          <div class="nav-collapse collapse">
+            <p class="navbar-text pull-right">
+              Fork this blog on <a href="https://github.com/jendiamond/jendiamond.github.io" class="navbar-link">Github</a>!
+            </p>
+            <ul class="nav">
+              <li><a rel="alternate" href="/feed.xml">RSS</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span9">
+          <div class="row-fluid">
+            <div id="main" role="main" class="well">
+              <div class="well" style="background-color: pink">
+    <div>
+     <a href="/index.html"><img src="/images/rubilious.jpg" /></a>
+    </div>
+</div>
+
+<h1 id="div-classwell-style-background-color-pink">&lt;div class="well" style= "background-color: pink"&gt;</h1>
+<pre><code>&lt;div&gt;
+ &lt;a href="/index.html"&gt;&lt;img src="/images/rubilious.jpg"&gt;&lt;/a&gt;
+&lt;/div&gt;
+</code></pre>
+<p>&lt;/div&gt;## Adding CLI to Your Gem using Thor
+Our example gem is called lorem. Replace lorem with your gem directory name accordingly.</p>
+
+<p><strong>1. Go into your Gem directory</strong></p>
+
+<p><code>cd lorem</code></p>
+
+<p><strong>2. Create the cli.rb in <code>lib/lorem</code></strong></p>
+
+<p><code>touch lib/lorem/cli.rb</code></p>
+
+<p><strong>3. In the cli.rb file, create a class that inherits from Thor</strong></p>
+
+<pre><code>require "thor"
+
+class CLI &lt; Thor
+  desc "ipsum", "Lorem text generator"
+  def ipsum
+    puts "Lorem Ipsum blah blah blah"
+  end
+end
+</code></pre>
+
+<p>Read more about this on the Thor website <a href="http://whatisthor.com/">http://whatisthor.com/</a></p>
+
+<p><strong>4. Create bin folder</strong></p>
+
+<p><code>mkdir bin</code></p>
+
+<p><strong>5. Create executable file naming it your gem command</strong></p>
+
+<p><code>touch bin/lorem</code></p>
+
+<p><strong>6. Add this into your <code>bin/lorem</code> file</strong></p>
+
+<pre><code>#!/usr/bin/env ruby
+require 'lorem/cli'
+
+CLI.start
+</code></pre>
+
+<p><strong>7. In lorem.gemspec, add this before <code>end</code></strong></p>
+
+<pre><code>spec.add_runtime_dependency "thor"
+</code></pre>
+
+<h3 id="how-to-run-your-unpublished-gem">How to Run Your Unpublished Gem</h3>
+<p>There are 3 possible ways to run it.</p>
+
+<ul>
+  <li>
+    <p><code>ruby -I lib bin/gem_command_name</code></p>
+  </li>
+  <li>
+    <p><code>bundle exec bin/gem_command_name</code></p>
+
+    <p>If you get a <code>bundler: not executable: bin/gem_command_name</code> error, run <code>chmod +x bin/gem_command_name</code></p>
+  </li>
+  <li>
+    <p><code>bundle exec gem_command_name</code></p>
+
+    <p>We currently haven't figured out why the last command doesn't work.</p>
+  </li>
+</ul>
+
+            </div>
+          </div>
+        </div>
+        <div class="span3">
+          <div class="well sidebar-nav">
+            <br /><br />
+            <ul class="nav nav-list">
+              <li class="nav-header">Ruby Phases</li>
+              <li><a href="/phase1">Phase 1</a></li>
+              <li><a href="/phase2">Phase 2</a></li>
+              <li><a href="/phase3">Phase 3</a></li>
+              <li><a href="/bigbag">Big Bag of Little Things</a></li>
+              <li><a href="/teachingtips">Teaching Tips</a></li>
+            </ul>
+          </div><!--/.well -->
+
+          <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+              <li class="nav-header">Cheat Sheets</li>
+              <li><a href="/cheatsheets/pull.html">Proper Git Hub Workflow</a></li>
+              <li><a href="/cheatsheets/bundlerfordev.html">Bundler for Development</a></li>
+              <li><a href="/cheatsheets/create_gem.html">Create a Gem</a></li>
+              <li><a href="/cheatsheets/adding-cli-to-a-gem-using-thor.html">Using Thor to Add CLI</a></li>
+            </ul>
+          </div><!--/.well -->
+
+          <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+              <li class="nav-header">References</li>
+              <li><a href = "http://daringfireball.net/projects/markdown/basics">Markdown Basics</a></li>
+              <li><a href = "http://haml.info/docs/yardoc/file.REFERENCE.html">Haml Doc</a></li>
+              <li><a href = "http://pcottle.github.io/learnGitBranching">Learn Git Branching</a></li>
+              <li><a href = "http://git-scm.com/documentation">Git Documentation</a></li>
+              <li><a href="http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html">Git Commit Messages</a></li>
+              <li><a href = "http://b-simple.de/download/restful_rails_en.pdf">RESTful Rails Development</a></li>
+              <li><a href = "https://speakerdeck.com/jendiamond/the-terminal-know-your-command-line-an-introduction">The Terminal</a></li>
+            </ul>
+          </div><!--/.well -->
+
+        </div><!--/span-->
+      </div>
+    </div>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="/javascripts/bootstrap.min.js"></script>
+  </body>
+</html>
+
+
